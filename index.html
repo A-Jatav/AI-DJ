@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>AI DJ Web App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body background="background.jpg">
+    <center>
+        <h3 class="btn btn-warning heading">AI DJ Web App
+            <br>
+            <span>NOTE: Move your left-wrist up and down to increase or decrease the volume and move your right wrist up
+                and down to increase or decrease the speed.</span>
+        </h3>
+        <br>
+        <br>
+        <label for="songs" style="color: aqua">Choose the song you want to play:</label>
+        <select name="songs" id="choose_song" style="background-color: aqua; padding: 10px; color: crimson;">
+            <option value="music.mp3">Default</option>
+            <option value="Hedwig's Theme.mp3">Hedwig's Theme</option>
+            <option value="Imperial March.mp3">Imperial March - Darth Vader's Theme Song</option>
+        </select>
+        <div class="div_speed">
+            <img src="disk.gif" class="div_speed_img">
+            <br>
+            <h3 class="btn btn-danger" id="speed">Speed: 1x</h3>
+        </div>
+        <div class="div_volume">
+            <img src="disk.gif" class="div_volume_img">
+            <br>
+            <h3 class="btn btn-danger" id="volume">Volume: 1</h3>
+        </div>
+        <button onclick="music_play()" class="btn btn-success">Play</button>
+        <button onclick="music_stop()" class="btn btn-info">Stop</button>
+    </center>
+</body>
+
+</html>

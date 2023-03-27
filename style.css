@@ -1,0 +1,40 @@
+body {
+    background-size: contain;
+}
+
+.heading {
+    font-size: 25px !important;
+    width: 100%;
+    margin: 0px;
+}
+
+.heading span {
+    font-size: 15px !important;
+    color: black;
+}
+
+.div_speed {
+    float: left;
+}
+
+.div_volume {
+    float: right;
+}
+
+.div_speed_img,
+.div_volume_img {
+    width: 200px;
+    border-radius: 100px;
+}
+
+#speed,
+#volume {
+    font-size: 25px;
+    margin: 15px;
+}
+
+canvas {
+    margin-top: 20px;
+    border: 10px;
+    border-style: outset;
+}
